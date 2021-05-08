@@ -1,0 +1,178 @@
+C:\Users\Administrator\Desktop\Geek\01jvm\src\main\java\com\geekbang\codes\jvm>javac Hello.java
+
+C:\Users\Administrator\Desktop\Geek\01jvm\src\main\java\com\geekbang\codes\jvm>javap -c -verbose Hello
+警告: 二进制文件Hello包含com.geekbang.codes.jvm.Hello
+Classfile /C:/Users/Administrator/Desktop/Geek/01jvm/src/main/java/com/geekbang/codes/jvm/Hello.class
+  Last modified 2021-5-8; size 1006 bytes
+  MD5 checksum ae8bd8bc9800fc82b05c2a0ff1914471
+  Compiled from "Hello.java"
+public class com.geekbang.codes.jvm.Hello
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #21.#32        // java/lang/Object."<init>":()V
+   #2 = Class              #33            // com/geekbang/codes/jvm/Arithmetic
+   #3 = Methodref          #2.#32         // com/geekbang/codes/jvm/Arithmetic."<init>":()V
+   #4 = Fieldref           #34.#35        // java/lang/System.out:Ljava/io/PrintStream;
+   #5 = Class              #36            // java/lang/StringBuilder
+   #6 = Methodref          #5.#32         // java/lang/StringBuilder."<init>":()V
+   #7 = String             #37            // add =
+   #8 = Methodref          #5.#38         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #9 = Double             5.0d
+  #11 = Methodref          #2.#39         // com/geekbang/codes/jvm/Arithmetic.add:(DI)D
+  #12 = Methodref          #5.#40         // java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+  #13 = Methodref          #5.#41         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #14 = Methodref          #42.#43        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #15 = String             #44            // minus=
+  #16 = Methodref          #2.#45         // com/geekbang/codes/jvm/Arithmetic.minus:(DF)D
+  #17 = String             #46            // sum=
+  #18 = Methodref          #5.#47         // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+  #19 = String             #48            // greater than 10
+  #20 = Class              #49            // com/geekbang/codes/jvm/Hello
+  #21 = Class              #50            // java/lang/Object
+  #22 = Utf8               <init>
+  #23 = Utf8               ()V
+  #24 = Utf8               Code
+  #25 = Utf8               LineNumberTable
+  #26 = Utf8               main
+  #27 = Utf8               ([Ljava/lang/String;)V
+  #28 = Utf8               StackMapTable
+  #29 = Class              #33            // com/geekbang/codes/jvm/Arithmetic
+  #30 = Utf8               SourceFile
+  #31 = Utf8               Hello.java
+  #32 = NameAndType        #22:#23        // "<init>":()V
+  #33 = Utf8               com/geekbang/codes/jvm/Arithmetic
+  #34 = Class              #51            // java/lang/System
+  #35 = NameAndType        #52:#53        // out:Ljava/io/PrintStream;
+  #36 = Utf8               java/lang/StringBuilder
+  #37 = Utf8               add =
+  #38 = NameAndType        #54:#55        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #39 = NameAndType        #56:#57        // add:(DI)D
+  #40 = NameAndType        #54:#58        // append:(D)Ljava/lang/StringBuilder;
+  #41 = NameAndType        #59:#60        // toString:()Ljava/lang/String;
+  #42 = Class              #61            // java/io/PrintStream
+  #43 = NameAndType        #62:#63        // println:(Ljava/lang/String;)V
+  #44 = Utf8               minus=
+  #45 = NameAndType        #64:#65        // minus:(DF)D
+  #46 = Utf8               sum=
+  #47 = NameAndType        #54:#66        // append:(I)Ljava/lang/StringBuilder;
+  #48 = Utf8               greater than 10
+  #49 = Utf8               com/geekbang/codes/jvm/Hello
+  #50 = Utf8               java/lang/Object
+  #51 = Utf8               java/lang/System
+  #52 = Utf8               out
+  #53 = Utf8               Ljava/io/PrintStream;
+  #54 = Utf8               append
+  #55 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #56 = Utf8               add
+  #57 = Utf8               (DI)D
+  #58 = Utf8               (D)Ljava/lang/StringBuilder;
+  #59 = Utf8               toString
+  #60 = Utf8               ()Ljava/lang/String;
+  #61 = Utf8               java/io/PrintStream
+  #62 = Utf8               println
+  #63 = Utf8               (Ljava/lang/String;)V
+  #64 = Utf8               minus
+  #65 = Utf8               (DF)D
+  #66 = Utf8               (I)Ljava/lang/StringBuilder;
+{
+  public com.geekbang.codes.jvm.Hello();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=6, locals=4, args_size=1
+         0: new           #2                  // class com/geekbang/codes/jvm/Arithmetic
+         3: dup
+         4: invokespecial #3                  // Method com/geekbang/codes/jvm/Arithmetic."<init>":()V
+         7: astore_1
+         8: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        11: new           #5                  // class java/lang/StringBuilder
+        14: dup
+        15: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+        18: ldc           #7                  // String add =
+        20: invokevirtual #8                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        23: aload_1
+        24: ldc2_w        #9                  // double 5.0d
+        27: bipush        10
+        29: invokevirtual #11                 // Method com/geekbang/codes/jvm/Arithmetic.add:(DI)D
+        32: invokevirtual #12                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+        35: invokevirtual #13                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        38: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        41: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        44: new           #5                  // class java/lang/StringBuilder
+        47: dup
+        48: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+        51: ldc           #15                 // String minus=
+        53: invokevirtual #8                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        56: aload_1
+        57: ldc2_w        #9                  // double 5.0d
+        60: fconst_2
+        61: invokevirtual #16                 // Method com/geekbang/codes/jvm/Arithmetic.minus:(DF)D
+        64: invokevirtual #12                 // Method java/lang/StringBuilder.append:(D)Ljava/lang/StringBuilder;
+        67: invokevirtual #13                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        70: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        73: iconst_0
+        74: istore_2
+        75: iconst_0
+        76: istore_3
+        77: iload_3
+        78: bipush        10
+        80: if_icmpge     93
+        83: iload_2
+        84: iload_3
+        85: iadd
+        86: istore_2
+        87: iinc          3, 1
+        90: goto          77
+        93: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        96: new           #5                  // class java/lang/StringBuilder
+        99: dup
+       100: invokespecial #6                  // Method java/lang/StringBuilder."<init>":()V
+       103: ldc           #17                 // String sum=
+       105: invokevirtual #8                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       108: iload_2
+       109: invokevirtual #18                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+       112: invokevirtual #13                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       115: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       118: iload_2
+       119: bipush        10
+       121: if_icmple     132
+       124: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       127: ldc           #19                 // String greater than 10
+       129: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       132: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 8
+        line 7: 41
+        line 8: 73
+        line 9: 75
+        line 10: 77
+        line 11: 83
+        line 10: 87
+        line 13: 93
+        line 14: 118
+        line 15: 124
+        line 17: 132
+      StackMapTable: number_of_entries = 3
+        frame_type = 254 /* append */
+          offset_delta = 77
+          locals = [ class com/geekbang/codes/jvm/Arithmetic, int, int ]
+        frame_type = 15 /* same */
+        frame_type = 38 /* same */
+}
+SourceFile: "Hello.java"
+
+

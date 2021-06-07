@@ -22,6 +22,6 @@ public class Klass2 {
     @Autowired
     public void dong() {
         System.out.println("auto config dong =======>");
-        System.out.println("Klass1.dong -> student info:id =" + student.getId() + " ;name =" + student.getName());
+        System.out.println("Klass2.dong -> student info:id =" + student.getId() + " ;name =" + student.getName());
     }
 }

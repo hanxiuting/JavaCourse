@@ -1,9 +1,5 @@
 package com.springdemo.springstart.xmlbean;
 
-import com.springdemo.springstart.springaop.Klass;
-import com.springdemo.springstart.springaop.Student;
-import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @Author: hxt

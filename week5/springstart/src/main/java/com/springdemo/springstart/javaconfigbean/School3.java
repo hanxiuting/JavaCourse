@@ -2,8 +2,6 @@ package com.springdemo.springstart.javaconfigbean;
 
 import com.springdemo.springstart.iservice.ISchool;
 import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 
 import javax.inject.Named;
 
@@ -24,7 +22,7 @@ public class School3 implements ISchool {
     @Override
     public void ding() {
         System.out.println("java config ding=======>");
-        System.out.println("School1.ding -> student info : id = " + class1.getStudent().getId() + " ;name =" + class1.getStudent().getName());
+        System.out.println("School3.ding -> student info : id = " + class1.getStudent().getId() + " ;name =" + class1.getStudent().getName());
     }
 
 }

@@ -1,7 +1,5 @@
 package com.springdemo.springstart.xmlbean;
 
-import lombok.Data;
-import lombok.ToString;
 
 /**
  * @Author: hxt

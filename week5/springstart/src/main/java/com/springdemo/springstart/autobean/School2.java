@@ -22,8 +22,8 @@ public class School2 implements ISchool {
 
     @Override
     public void ding() {
-        System.out.println("java config ding =======>");
-        System.out.println("School1.ding -> student info : id = " + class1.getStudent().getId() + " ;name =" + class1.getStudent().getName());
+        System.out.println("auto config ding =======>");
+        System.out.println("School2.ding -> student info : id = " + class1.getStudent().getId() + " ;name =" + class1.getStudent().getName());
     }
 
 }

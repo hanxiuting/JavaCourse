@@ -1,6 +1,5 @@
 package com.springdemo.springstart.javaconfigbean;
 
-import com.springdemo.springstart.springaop.Student;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

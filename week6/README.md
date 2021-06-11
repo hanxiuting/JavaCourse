@@ -2,7 +2,7 @@
 
 [建表SQL](https://github.com/hanxiuting/JavaCourse/blob/main/week6/%E5%BB%BA%E8%A1%A8SQL.md)
 
-[表关系结构](https://github.com/hanxiuting/JavaCourse/blob/main/week6/ER%E5%9B%BE.png)
+
 
 
 
